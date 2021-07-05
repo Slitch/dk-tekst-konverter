@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ÆØÅ tekst konverter | omdan ae oe aa til æ ø å</title>
+	<meta name="description" content="Mangler dit tastatur æ, ø, å. Indsæt din tekst i denne magiske tekst konverter" />
+	 <meta name="keywords" content="ae, oe, aa, æ, ø, å, æøå, konverter, tekstkonverter, udlandet, tastatur, keyboard, dansk">
+  <meta name="author" content="Poul Lynge Larsen">
+	<link rel="canonical" href="#" />
+	<meta property="og:locale" content="da_DK" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tastatur konverter | omdan ae oe aa til æ ø å" />
+	<meta property="og:description" content="Mangler dit tastatur æ, ø, å. Indsæt din tekst i denne magiske tekst konverter" />
+	<meta property="og:url" content="#" />
+	<meta property="og:site_name" content="ÆØÅ tekst konverter" />
+	<meta property="og:image" content="#" />
+	<meta property="og:image:width" content="785" />
+	<meta property="og:image:height" content="421" />
+
+	<style>
+		body,textarea,input,select{background:0;border-radius:0;font:20px sans-serif;margin:0}
+		.addon,.btn-sm,textarea,input,select{outline:0;font-size:20px}
+		.btn,.nav a{text-decoration:none}
+		.container{margin:0 20px;width:auto}
+		@media(min-width:1310px){
+			.container{margin:auto;width:1270px}
+		}
+		.btn,h2{font-size:2em}
+		h1{font-size:2em}
+		.btn{background:#999;border-radius:0px;border:0;color:#fff;cursor:pointer;display:inline-block;margin:2px 0;padding:12px 30px 14px}
+		.btn:hover{background:#888}
+		.btn:active,.btn:focus{background:#777}
+		/*.btn-a{background:#0ae}*/
+		.btn-a{background:blueviolet}
+		.btn-a:hover{background:#09d}
+		.btn-a:hover{
+			background: rgb(255,20,147);
+			background: -moz-linear-gradient(180deg, rgba(255,20,147,1) 0%, rgba(138,43,226,1) 100%);
+			background: -webkit-linear-gradient(180deg, rgba(255,20,147,1) 0%, rgba(138,43,226,1) 100%);
+			background: linear-gradient(180deg, rgba(255,20,147,1) 0%, rgba(138,43,226,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff1493",endColorstr="#8a2be2",GradientType=1);
+		}
+		.btn-a:active,.btn-a:focus{background:#08b}
+		label>*{display:inline-block;}
+		textarea,input,select{
+			/*background-color: mediumspringgreen;*/
+			background: rgb(0,250,154);
+			background: -moz-linear-gradient(180deg, rgba(0,250,154,1) 0%, rgba(0,212,255,1) 100%);
+			background: -webkit-linear-gradient(180deg, rgba(0,250,154,1) 0%, rgba(0,212,255,1) 100%);
+			background: linear-gradient(180deg, rgba(0,250,154,1) 0%, rgba(0,212,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fa9a",endColorstr="#00d4ff",GradientType=1);
+			border:3px solid #000;padding:8px}
+		textarea:focus,input:focus,select:focus{border-color:magenta}
+		textarea,input[type=text]{-webkit-appearance:none;width:36.5em;outline:0}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Konvertere udenlandsk tastatur til ÆØÅ</h1>
+	<p><label for="input_text">Konvertere ae, aa, oe til æ, ø, å samt AE, AA, OE til Æ, Ø, Å</label></p>
+	<textarea id="input_text" rows="10" placeholder="Kopier tekst ind i denne felt og tryk på knappen"></textarea>
+	<br>
+	<br>
+	<button class="btn btn-a" onclick="myFunction()">tryk her for at konvertere til ÆØÅ</button>
+	<footer>
+		<hr>
+      <p><a href="https://github.com/Slitch">Created by Poul Lynge Larsen &middot; &copy; 2021</a></p>
+    </footer>
+</div>
+<script>
+function myFunction() {
+	var str = document.getElementById("input_text").value;
+	var res = str.replace(/ae/g, "æ")	
+               .replace(/AE/g, "Æ")
+               .replace(/oe/g, "ø")
+               .replace(/OE/g, "Ø")
+               .replace(/aa/g, "å")
+               .replace(/AA/g, "Å");
+
+	document.getElementById("input_text").value = res;
+}
+</script>
+
+<!--------------------------------------------------- 
+ * 
+ *  Tak fordi du kiggede forbi min tekst konverter :)
+ *  Denne tekst konverter er lavet af:
+ *  Poul Lynge Larsen 2021
+ *
+ *-------------------------------------------------->
+
+</body>
+</html>
